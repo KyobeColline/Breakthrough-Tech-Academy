@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - BreakThrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="BreakThrough Tech Logo">
+            <span>BreakThrough Tech</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="index.html#about-section">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button></li>
+        </ul>
+    </nav>
+
+    <!-- Course Header -->
+    <header class="course-header">
+        <div class="header-content">
+            <h1>Our Courses</h1>
+            <p>Explore our comprehensive range of tech courses designed to help you succeed</p>
+        </div>
+    </header>
+
+    <!-- Keep only this search section after the header -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="courseSearch" placeholder="Search for courses...">
+                <button id="searchBtn" type="button" aria-label="Search courses">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Grid -->
+    <section class="courses-grid">
+        <!-- Web Development Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-code"></i> Web Development</h2>
+                <p>Master modern web technologies and frameworks</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- Web Development Courses -->
+                <div class="course-card" data-category="web-development" data-level="beginner" data-duration="long">
+                    <div class="course-image">
+                        <img src="images/web.png" alt="Web Development">
+                        <div class="course-overlay">
+                            <span class="course-level">Beginner</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Learn to build modern, responsive websites from scratch using the latest web technologies.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 24 Weeks</span>
+                            <span><i class="fas fa-users"></i> 250 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web-development" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/React.png" alt="React Development">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <h3>React Development</h3>
+                        <p>Master modern React development with hooks, context API, and state management.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                            <span><i class="fas fa-users"></i> 200 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web-development" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/backend.png" alt="Backend Development">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3>Backend Web Development</h3>
+                        <p>Learn server-side programming, APIs, and database management.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 20 Weeks</span>
+                            <span><i class="fas fa-users"></i> 160 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Development Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-mobile-alt"></i> Mobile Development</h2>
+                <p>Build cutting-edge mobile applications</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- Mobile Development Courses -->
+                <div class="course-card" data-category="mobile-dev" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/mobile.png" alt="Mobile Development">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Master cross-platform mobile development and build apps for iOS and Android.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                            <span><i class="fas fa-users"></i> 180 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="mobile-dev" data-level="advanced" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/ios.png" alt="iOS Development">
+                        <div class="course-overlay">
+                            <span class="course-level">Advanced</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">SwiftUI</span>
+                        </div>
+                        <h3>iOS App Development</h3>
+                        <p>Build professional iOS applications using Swift and modern frameworks.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 18 Weeks</span>
+                            <span><i class="fas fa-users"></i> 140 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-chart-network"></i> Data Science</h2>
+                <p>Transform data into actionable insights</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- Data Science Courses -->
+                <div class="course-card" data-category="data-science" data-level="advanced" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/sci.png" alt="Data Science">
+                        <div class="course-overlay">
+                            <span class="course-level">Advanced</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <h3>Data Science & Analytics</h3>
+                        <p>Dive deep into data analysis, machine learning, and artificial intelligence.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 20 Weeks</span>
+                            <span><i class="fas fa-users"></i> 150 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="data-science" data-level="beginner" data-duration="short">
+                    <div class="course-image">
+                        <img src="images/py.png" alt="Python Programming">
+                        <div class="course-overlay">
+                            <span class="course-level">Beginner</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <h3>Python for Data Science</h3>
+                        <p>Learn Python programming fundamentals and data analysis with real-world projects.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-users"></i> 300 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="data-science" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/analysis.png" alt="Data Analytics">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                        <h3>Business Data Analytics</h3>
+                        <p>Master data visualization and business intelligence tools for data-driven decisions.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                            <span><i class="fas fa-users"></i> 175 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersecurity Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-shield-alt"></i> Cybersecurity</h2>
+                <p>Protect systems and networks from cyber threats</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- Cybersecurity Courses -->
+                <div class="course-card" data-category="cybersecurity" data-level="intermediate" data-duration="long">
+                    <div class="course-image">
+                        <img src="images/cyber.png" alt="Cybersecurity">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Ethical Hacking</span>
+                        </div>
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p>Learn to protect systems and networks from cyber threats and attacks.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 22 Weeks</span>
+                            <span><i class="fas fa-users"></i> 120 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="cybersecurity" data-level="advanced" data-duration="long">
+                    <div class="course-image">
+                        <img src="images/sec.png" alt="Advanced Security">
+                        <div class="course-overlay">
+                            <span class="course-level">Advanced</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Security Audit</span>
+                            <span class="tag">CISSP</span>
+                        </div>
+                        <h3>Advanced Cybersecurity</h3>
+                        <p>Advanced security concepts, penetration testing, and security architecture design.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 28 Weeks</span>
+                            <span><i class="fas fa-users"></i> 90 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI/UX Design Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-palette"></i> UI/UX Design</h2>
+                <p>Create beautiful and user-friendly digital experiences</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- UI/UX Design Courses -->
+                <div class="course-card" data-category="ui-ux" data-level="beginner" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/ui.png" alt="UI Design Fundamentals">
+                        <div class="course-overlay">
+                            <span class="course-level">Beginner</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Design Systems</span>
+                        </div>
+                        <h3>UI Design Fundamentals</h3>
+                        <p>Master the principles of user interface design and create visually stunning applications.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                            <span><i class="fas fa-users"></i> 200 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="ui-ux" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/rience.png" alt="UX Design">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">User Research</span>
+                            <span class="tag">Wireframing</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <h3>UX Design & Research</h3>
+                        <p>Learn user experience design principles and conduct effective user research.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 18 Weeks</span>
+                            <span><i class="fas fa-users"></i> 160 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cloud Computing Category -->
+        <div class="category-section">
+            <div class="category-title">
+                <h2><i class="fas fa-cloud"></i> Cloud Computing</h2>
+                <p>Master cloud technologies and infrastructure</p>
+            </div>
+            <div class="course-cards-grid">
+                <!-- Cloud Computing Courses -->
+                <div class="course-card" data-category="cloud" data-level="intermediate" data-duration="medium">
+                    <div class="course-image">
+                        <img src="images/aws.png" alt="AWS Cloud">
+                        <div class="course-overlay">
+                            <span class="course-level">Intermediate</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Cloud Services</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <h3>AWS Cloud Solutions</h3>
+                        <p>Learn to architect and deploy applications using Amazon Web Services.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 20 Weeks</span>
+                            <span><i class="fas fa-users"></i> 180 students</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="cloud" data-level="advanced" data-duration="long">
+                    <div class="course-image">
+                        <img src="images/cloud.png" alt="Cloud Architecture">
+                        <div class="course-overlay">
+                            <span class="course-level">Advanced</span>
+                            <a href="#" class="course-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">Multi-Cloud</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Architecture</span>
+                        </div>
+                        <h3>Cloud Architecture & DevOps</h3>
+                        <p>Master cloud architecture patterns and implement DevOps practices.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 24 Weeks</span>
+                            <span><i class="fas fa-users"></i> 140 students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form Section -->
+    <section class="enrollment-section" id="enrollmentSection" style="display: none;">
+        <div class="enrollment-container">
+            <button class="close-form" id="closeEnrollment" type="button">
+                <i class="fas fa-times"></i>
+                <span class="sr-only">Close enrollment form</span>
+            </button>
+            
+            <div class="enrollment-header">
+                <h2>Join Our Next Cohort</h2>
+                <p class="selected-course">Course: <span id="selectedCourseName"></span></p>
+            </div>
+            
+            <form id="enrollmentForm" class="modern-form">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="studentName" name="studentName" required>
+                        <label for="studentName">Full Name</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="email" id="studentEmail" name="studentEmail" required>
+                        <label for="studentEmail">Email Address</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        <label for="phoneNumber">Phone Number</label>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <select id="startDate" name="startDate" required>
+                            <option value="" disabled selected></option>
+                            <option value="next-month">Next Month</option>
+                            <option value="next-quarter">Next Quarter</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                        <label for="startDate">Preferred Start Date</label>
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <select id="paymentPlan" name="paymentPlan" required>
+                            <option value="" disabled selected></option>
+                            <option value="full">Full Payment</option>
+                            <option value="installment">Installment Plan</option>
+                            <option value="scholarship">Scholarship</option>
+                        </select>
+                        <label for="paymentPlan">Payment Plan</label>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Enroll Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <p class="form-note">Our team will contact you within 24 hours to confirm your enrollment.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our courses</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are the payment options available?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer multiple payment options including credit/debit cards, PayPal, and installment plans. Students can also apply for scholarships or financial aid.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Are the courses self-paced?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, most of our courses are self-paced, allowing you to learn at your own convenience. However, some courses may have specific schedules for live sessions and assignments.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I get a certificate upon completion?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you'll receive a verified certificate of completion for each course you successfully complete. These certificates can be shared on LinkedIn and other professional platforms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What kind of support is available?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We provide 24/7 technical support, access to course mentors, and a community forum where you can interact with other students. Live chat support is also available during business hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this after the FAQ section and before the footer -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>Why Choose BreakThrough Tech?</h2>
+                <p>Empowering Future Tech Leaders Through Excellence in Education</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Industry-Led Curriculum</h3>
+                    <p>Our courses are designed and updated regularly with input from industry leaders to ensure you learn the most relevant skills.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from professionals with years of real-world experience in leading tech companies and successful startups.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-on Learning</h3>
+                    <p>Gain practical experience through real-world projects, interactive workshops, and industry collaborations.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace with our flexible schedule options and access to 24/7 learning resources.</p>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">15K+</span>
+                    <span class="stat-label">Students Enrolled</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Expert Mentors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Industry Partners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this before the closing body tag -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p class="footer-about">
+                    Empowering the next generation of tech leaders through innovative education and hands-on learning experiences.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html#about-section">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Programs -->
+            <div class="footer-section">
+                <h3>Programs</h3>
+                <ul class="footer-links">
+                    <li><a href="courses.html">Web Development</a></li>
+                    <li><a href="courses.html">Mobile Development</a></li>
+                    <li><a href="courses.html">Data Science</a></li>
+                    <li><a href="courses.html">Cybersecurity</a></li>
+                    <li><a href="courses.html">UI/UX Design</a></li>
+                    <li><a href="courses.html">Cloud Computing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Plot 12  , Rashid Khamis Road<br>Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+256754176645" class="contact-phone-link">+256754176645</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:breakthroughtech@gmail.com" class="contact-email-link">breakthroughtech@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 BreakThrough Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/enrollment.js"></script>
+    <!-- Add this before </body> in all HTML files -->
+    <script src="js/footer.js"></script>
+    <!-- Add this before </body> -->
+    <script src="js/navbar.js"></script>
+    <!-- Add courses.js for FAQ functionality -->
+    <script src="js/courses.js"></script>
+</body>
+</html>

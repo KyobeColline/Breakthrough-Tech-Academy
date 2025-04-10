@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Breakthrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="BreakThrough Tech Logo">
+            <span>BreakThrough Tech</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="index.html#about-section">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <span class="section-badge">Get In Touch</span>
+            <h1>We'd Love To Hear From You</h1>
+            <p>Have questions about our programs or want to join Breakthrough Tech Academy? We're here to help.</p>
+        </div>
+    </section>
+    
+    <!-- Quick Contact Cards -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-cards">
+                <!-- Phone Card -->
+                <div class="contact-card">
+                    <a href="tel:+256754176645" class="card-link">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p class="contact-detail">+256754176645</p>
+                        <span class="availability">Available 9am-5pm, Mon-Fri</span>
+                    </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <a href="mailto:breakthroughtech@gmail.com" class="card-link">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p class="contact-detail">breakthroughtech@gmail.com</p>
+                        <span class="availability">We respond within 24 hours</span>
+                    </a>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Plot+12+Rashid+Khamis+Road+Kampala+Uganda" 
+                       class="card-link" 
+                       target="_blank">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p class="contact-detail">Plot 12, Rashid Khamis Road<br>Kampala, Uganda</p>
+                        <span class="availability">Open for campus tours</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="program">Program Information</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for contacting us. We'll get back to you shortly.</p>
+                        <button id="sendAnother" class="secondary-btn">Send Another Message</button>
+                    </div>
+                </div>
+                
+                <div class="form-sidebar">
+                    <div class="why-contact-us">
+                        <h3>Why Contact Us?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Get personalized program recommendations</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Learn about scholarship opportunities</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Schedule a campus tour</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Connect with our student advisors</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Virtual Campus Tour Section -->
+    <section class="virtual-tour-section">
+        <div class="container">
+            <h2>Virtual Campus Tour</h2>
+            <p class="section-description">Explore our state-of-the-art facilities and learning environments from anywhere in the world. Our virtual tour gives you an immersive experience of our campus.</p>
+            
+            <div class="tour-gallery">
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/room.png" alt="Modern Classroom">
+                        <div class="tour-overlay">
+                            <h3>Modern Classrooms</h3>
+                            <p>Our spacious classrooms are equipped with the latest technology to enhance your learning experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/lab.png" alt="Computer Lab">
+                        <div class="tour-overlay">
+                            <h3>Computer Labs</h3>
+                            <p>Access to high-performance computers and specialized software for hands-on learning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/study.png" alt="Study Area">
+                        <div class="tour-overlay">
+                            <h3>Study Areas</h3>
+                            <p>Comfortable spaces designed for individual study and group collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/recreation.png" alt="Recreation Area">
+                        <div class="tour-overlay">
+                            <h3>Recreation Area</h3>
+                            <p>Take a break and recharge in our student lounge and recreation facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tour-cta">
+                <p>Join our weekly virtual tours every Wednesday at 4:00 PM to explore our facilities in real-time with a guide.</p>
+                <button class="tour-btn">Schedule a Virtual Tour</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Campus Life Section -->
+    <section class="campus-life-section">
+        <div class="container">
+            <h2>Experience Campus Life</h2>
+            <p class="section-description">Discover the vibrant community and activities that make our academy unique</p>
+            
+            <div class="campus-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Interactive Learning</h3>
+                    <p>Our hands-on approach combines theory with practical projects in state-of-the-art labs.</p>
+                    <div class="highlight-stats">
+                        <div class="stat">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Project-based</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15%</span>
+                            <span class="stat-label">Theory</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Events</h3>
+                    <p>Join our weekly hackathons, coding competitions, and networking events with industry professionals.</p>
+                    <div class="highlight-stats">
+                        <div class="stat">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Events Monthly</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Participants</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Career Support</h3>
+                    <p>Our dedicated career services team helps you build your portfolio and connect with employers.</p>
+                    <div class="highlight-stats">
+                        <div class="stat">
+                            <span class="stat-number">1:1</span>
+                            <span class="stat-label">Mentorship</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Partner Companies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="campus-gallery">
+                <div class="gallery-item">
+                    <img src="images/study.png" alt="Study Group">
+                    <div class="gallery-overlay">
+                        <h4>Collaborative Learning</h4>
+                        <p>Work together in our dedicated study spaces</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hack.png" alt="Hackathon">
+                    <div class="gallery-overlay">
+                        <h4>Hackathons</h4>
+                        <p>Compete and innovate with fellow students</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mentor2.png" alt="Mentorship">
+                    <div class="gallery-overlay">
+                        <h4>Mentorship</h4>
+                        <p>Get guidance from industry experts</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="campus-cta">
+                <a href="about.html" class="campus-button">Learn More About Our Campus</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p class="footer-about">
+                    Empowering the next generation of tech leaders through innovative education and hands-on learning experiences.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html#about-section">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Programs -->
+            <div class="footer-section">
+                <h3>Programs</h3>
+                <ul class="footer-links">
+                    <li><a href="courses.html">Web Development</a></li>
+                    <li><a href="courses.html">Mobile Development</a></li>
+                    <li><a href="courses.html">Data Science</a></li>
+                    <li><a href="courses.html">Cybersecurity</a></li>
+                    <li><a href="courses.html">UI/UX Design</a></li>
+                    <li><a href="courses.html">Cloud Computing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Plot 12  , Rashid Khamis Road<br>Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+256754176645" class="footer-contact-link">+256754176645</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:breakthroughtech@gmail.com" class="contact-email-link">breakthroughtech@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 BreakThrough Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+  
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/whatsapp.js"></script>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/256754176645" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-text">Chat with us</div>
+    </a>
+</body>
+</html>

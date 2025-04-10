@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakThrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="BreakThrough Tech Logo">
+            <span>BreakThrough Tech</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-image" style="background-image: url('images/Welcome.png')"></div>
+                <div class="hero-content">
+                    <h1>Welcome to BreakThrough Tech Academy</h1>
+                    <p>Empowering the next generation of tech leaders through innovative education</p>
+                    <a href="courses.html" class="cta-button">Browse Courses</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('images/Experts.png')"></div>
+                <div class="hero-content">
+                    <h1>Learn from Industry Experts</h1>
+                    <p>Get hands-on experience with cutting-edge technologies and real-world projects</p>
+                    <a href="courses.html" class="cta-button">Explore Programs</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('images/Career2.png')"></div>
+                <div class="hero-content">
+                    <h1>Transform Your Career</h1>
+                    <p>Join thousands of successful graduates in the tech industry</p>
+                    <a href="courses.html" class="cta-button">Start Learning</a>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slide-dots"></div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="section-header">
+            <h2>Featured Courses</h2>
+            <p class="section-subtitle">Explore our most popular professional certification programs</p>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/web.png" alt="Web Development">
+                    <div class="course-overlay">
+                        <span class="course-level">Beginner to Advanced</span>
+                        <a href="courses.html" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Master modern web technologies and build responsive websites.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-users"></i> 500+ Students</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/Data.png" alt="Data Science">
+                    <div class="course-overlay">
+                        <span class="course-level">Intermediate</span>
+                        <a href="courses.html" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Statistics</span>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Learn to analyze data and make data-driven decisions.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                        <span><i class="fas fa-users"></i> 400+ Students</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/Machine.png" alt="AI & Machine Learning">
+                    <div class="course-overlay">
+                        <span class="course-level">Advanced</span>
+                        <a href="courses.html" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Explore the world of artificial intelligence and machine learning.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 20 Weeks</span>
+                        <span><i class="fas fa-users"></i> 300+ Students</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <h2>About BreakThrough Tech Academy</h2>
+            <p>We are a premier technology education institution dedicated to transforming careers through innovative learning experiences. Our mission is to empower the next generation of tech leaders with practical skills and industry knowledge.</p>
+            
+            <div class="about-highlights">
+                <div class="highlight">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of real-world experience</p>
+                </div>
+                
+                <div class="highlight">
+                    <h3>Hands-on Learning</h3>
+                    <p>Work on real projects using the latest technologies and tools</p>
+                </div>
+                
+                <div class="highlight">
+                    <h3>Community Support</h3>
+                    <p>Join a network of like-minded individuals and industry experts</p>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Employment Rate</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Industry Partners</p>
+                </div>
+            </div>
+            
+            <div class="about-team">
+                <h3>Meet Our Team</h3>
+                <p>Dedicated professionals behind BreakThrough Tech Academy</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/CEO.jpg" alt="Kyobe Colline">
+                        </div>
+                        <div class="member-info">
+                            <h3>Kyobe Colline</h3>
+                            <p class="member-role">Founder & CEO</p>
+                            <p class="member-bio">With over 15 years in tech education, John founded BreakThrough Tech to make quality tech education accessible to everyone.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/MAC.jpg" alt="Nkajja Mark">
+                        </div>
+                        <div class="member-info">
+                            <h3>Nkajja Mark</h3>
+                            <p class="member-role">Head of Education</p>
+                            <p class="member-bio">Jane brings her expertise in curriculum development and industry connections to ensure our programs meet market demands.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/PATSA.jpg" alt="Sanyu Patience">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sanyu Patience</h3>
+                            <p class="member-role">Lead Instructor</p>
+                            <p class="member-bio">A former software engineer with 10+ years of experience, Michael now shares his knowledge with our students.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/UMAR.jpg" alt="Mulindwa Umar">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mulindwa Umar</h3>
+                            <p class="member-role">Career Services Director</p>
+                            <p class="member-bio">Sarah helps our graduates transition into tech careers through personalized guidance and industry connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Students Say</h2>
+            <p class="section-subtitle">Real success stories from our graduates</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="student-profile">
+                            <img src="images/NAKKU.jpg" alt="Nakku Sylvia">
+                            <div class="student-info">
+                                <h3>Nakku Sylvia</h3>
+                                <span class="course-taken">Web Development Graduate</span>
+                                <div class="company-info">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Frontend Developer at Google</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"The courses here transformed my career. I went from zero coding knowledge to a full-stack developer in 6 months! The hands-on projects and mentor support made all the difference."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="student-profile">
+                            <img src="images/EMMA.jpg" alt="Kizza Emmanuel ">
+                            <div class="student-info">
+                                <h3>Kizza Emmanuel </h3>
+                                <span class="course-taken">Data Science Graduate</span>
+                                <div class="company-info">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Data Analyst at Microsoft</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"The Data Science program exceeded my expectations. The curriculum is perfectly structured for beginners, and the real-world projects helped me build an impressive portfolio."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="student-profile">
+                            <img src="images/UMAR.jpg" alt="Mulindwa Umar">
+                            <div class="student-info">
+                                <h3>Mulindwa Umar</h3>
+                                <span class="course-taken">AI & ML Graduate</span>
+                                <div class="company-info">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>ML Engineer at Tesla</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"The AI & Machine Learning program provided me with cutting-edge skills. The instructors are industry experts who bring real-world experience to the classroom. Now I'm living my dream career!"</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="student-profile">
+                            <img src="images/PATSA.jpg" alt="Sanyu Patience">
+                            <div class="student-info">
+                                <h3>Sanyu Patience</h3>
+                                <span class="course-taken">Full Stack Development Graduate</span>
+                                <div class="company-info">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Software Engineer at Amazon</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"The practical approach to learning and the supportive community made my journey into tech seamless. The career services team was instrumental in landing my dream job at Amazon."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="prev-testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots"></div>
+                <button class="next-testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p class="footer-about">Empowering the next generation of tech leaders through innovative education and hands-on learning experiences. Join us in shaping the future of technology.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Follow us on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Subscribe to our YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                
+                </ul>
+            </div>
+
+            <!-- Programs Section -->
+            <div class="footer-section">
+                <h3>Our Programs</h3>
+                <ul class="footer-links">
+                    <li><a href="courses.html">Web Development</a></li>
+                    <li><a href="courses.html">Data Science</a></li>
+                    <li><a href="courses.html">AI & Machine Learning</a></li>
+                    <li><a href="courses.html">Cybersecurity</a></li>
+                    <li><a href="courses.html">Cloud Computing</a></li>
+                    <li><a href="courses.html">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Plot 12  , Rashid Khamis Road<br>Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>
+                             <a href="tel:+256754176645" class="contact-phone-link">+256754176645</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                            <a href="mailto:breakthroughtech@gmail.com" class="contact-email-link">breakthroughtech@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 BreakThrough Tech Academy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Add this before </body> in all HTML files -->
+<script src="js/footer.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Add this before </body> -->
+    <script src="js/navbar.js"></script>
+</body>
+</html> 
